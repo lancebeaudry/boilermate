@@ -1,4 +1,4 @@
-app.controller('MainController', ['$scope', function($scope) {
+app.controller('MainController', ['$scope', function ($scope, $log) {
     $scope.navlist = {
         item1: 'Home',
         item2: 'Dropdown',
@@ -6,7 +6,19 @@ app.controller('MainController', ['$scope', function($scope) {
         item4: 'Item2',
         item5: 'About'
     };
-    $scope.footerList = {
-        name: 'Business Name'
+    $scope.status = {
+        isopen: false
     };
+    $scope.footerList = {
+        name: 'TRT Furniture'
+    };
+    $scope.toggled = function (open) {
+        $log.log('Dropdown is now: ', open);
+    };
+    $scope.toggleDropdown = function ($event) {
+        $event.preventDefault();
+        $event.stopPropagation();
+        $scope.status.isopen = !$scope.status.isopen;
+    };
+    $scope.navbarCollapsed = true;
 }]);

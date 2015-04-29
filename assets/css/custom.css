@@ -1,8 +1,11 @@
 /* Global Styles ----------------- */
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
 body {
     margin: 0px;
     position: relative;
     background-color: #f4f4f4;
+    font-family: "PT Sans", sans-serif;
 }
 @media (min-width: 768px) {
     .container {
@@ -57,10 +60,30 @@ body {
 /* Main ----------------------- */
 
 /* Form ----------------------- */
-
+/* Fixed Footer ---------------- */
+.navbar-fixed-bottom {
+    background-color: gray;
+    border-top: 1px solid #000;
+}
+h4#send-photo {
+    display: inline-block;
+    padding: 4px;
+    text-transform: uppercase;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: right;
+}
+.bottom-content .btn {
+    display: inline-block;
+    float: right;
+    border: none;
+    border-radius: 0px;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    width: 250px;
+}
 /* Footer ----------------------- */
 footer {
-   
     background-color: #d9d9d9;
     padding: 50px;
     padding-bottom: 0px;
