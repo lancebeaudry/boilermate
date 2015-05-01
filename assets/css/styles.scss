@@ -1,0 +1,165 @@
+/* Components & Variables */
+
+// Colors
+
+$main-bg: #ffffff;
+$second-bg: #363B3E;
+$link: #212121;
+$link-hover: #F44336;
+$primary: #F44336;
+$secondary: #FF6D00;
+$p-color: #4a4a4a;
+$h-color: #212121;
+$main-border: #ccc;
+$white: #f7f7f7;
+$gray: #959595;
+
+// Font Sizes
+
+$h1: 2em;
+$h2: 1.5em;
+$h3: 1.17em;
+$h4: 1.12em;
+$h5: .83em;
+$h6: .75em;
+$p-size: 1em;
+
+
+// Buttons
+
+
+// Mixins 
+
+
+/* Global Styles ----------------- */
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
+body {
+    margin: 0px;
+    position: relative;
+    background-color: $main-bg;
+    font-family: "PT Sans", sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: $h-color;
+}
+h1 {
+    font-size: $h1;
+}
+h2 {
+    font-size: $h2;
+}
+h3 {
+    font-size: $h3;
+}
+h4 {
+    font-size: $h4;
+}
+h5 {
+    font-size: $h5;
+}
+h6 {
+    font-size: $h6;
+}
+p {
+    font-size: $p-size;
+    color: $p-color;
+}
+a button:hover {
+    background-color: $primary;
+}
+@media (min-width: 768px) {
+    .container {
+        width: auto;
+    }
+}
+@media (max-width: 767px) {
+    body {
+        padding: 0px;
+    }
+    .container {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+/* Nav ------------------------- */
+.navbar-inverse {
+    background-color: $white;
+}
+.navbar-collapse {
+    margin-top: 4px;
+    background-color: $white;
+}
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a:active,
+.navbar-inverse .navbar-nav>.open>a:focus {
+    background-color: $white;
+    color: $link;
+}
+.navbar-header .navbar-toggle {
+    border: none;
+}
+.navbar-header .navbar-toggle:hover,
+.navbar-header .navbar-toggle:active,
+.navbar-header .navbar-toggle:focus {
+    border: none;
+    background-color: inherit;
+}
+.navbar-header .navbar-toggle >.icon-bar {
+    background-color: $primary;
+    width: 30px;
+    height: 3px;
+}
+.navbar-collapse ul.nav li a {
+    color: $link;
+    text-transform: uppercase;
+    font-size: $p-size;
+}
+.navbar-collapse ul.nav li a:hover {
+    color: $link-hover;
+}
+
+/*Makes menu item drop on hover on desktop screens */
+@media (min-width: 768px) {
+    ul.nav li.dropdown:hover > ul.dropdown-menu {
+        display: block;
+    }
+}
+@media (max-width: 767px) {
+ 
+}
+/* Header ----------------------- */
+#jumbotron {
+    height: 400px;
+    width: 100%;
+}
+/* Sliders ----------------------- */
+
+/* Main ----------------------- */
+
+/* Form ----------------------- */
+
+/* Footer ----------------------- */
+footer {
+    background-color: $second-bg;
+    padding: 50px;
+    padding-bottom: 0px;
+}
+footer a {
+    color: $gray;
+}
+footer a:hover {
+    color: $white;
+}
+.social {
+    text-align: center;
+}
+.fa {
+    padding: 10px;
+}
+#copyright {
+    text-align: center;
+    padding: 10px;
+    margin-top: 60px;
+}
