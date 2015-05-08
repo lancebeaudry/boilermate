@@ -4,13 +4,21 @@ app.controller('MainController', ['$scope', function ($scope, $log) {
         item2: 'Dropdown',
         item3: 'Item',
         item4: 'Item2',
-        item5: 'About'
+        item5: 'About',
+        item6: 'Contact'
     };
     $scope.status = {
         isopen: false
     };
     $scope.footerList = {
-        name: 'TRT Furniture'
+        name: 'Business Name',
+        item1: $scope.navlist.item1,
+        item3: $scope.navlist.item3,
+        item4: $scope.navlist.item4,
+        item5: $scope.navlist.item5,
+        item6: $scope.navlist.item6,
+        phone: '555-555-5555',
+        email: 'contact@website.com'
     };
     $scope.toggled = function (open) {
         $log.log('Dropdown is now: ', open);

@@ -5,9 +5,9 @@
 $main-bg: #ffffff;
 $second-bg: #363B3E;
 $link: #212121;
-$link-hover: #F44336;
-$primary: #F44336;
-$secondary: #FF6D00;
+$link-hover: #2196F3;
+$primary: #2196F3;
+$secondary: #90CAF9;
 $p-color: #4a4a4a;
 $h-color: #212121;
 $main-border: #ccc;
@@ -32,8 +32,8 @@ $p-size: 1em;
 
 
 /* Global Styles ----------------- */
-@import url(http://fonts.googleapis.com/css?family=PT+Sans);
-
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(animate.min.css);
 body {
     margin: 0px;
     position: relative;
@@ -68,6 +68,13 @@ p {
 a button:hover {
     background-color: $primary;
 }
+a,
+a:hover,
+a:active,
+a:focus {
+    border: none;
+    outline: none;
+}
 @media (min-width: 768px) {
     .container {
         width: auto;
@@ -97,6 +104,9 @@ a button:hover {
     background-color: $white;
     color: $link;
 }
+.navbar-brand h3 {
+    color: $primary;
+}
 .navbar-header .navbar-toggle {
     border: none;
 }
@@ -119,32 +129,74 @@ a button:hover {
 .navbar-collapse ul.nav li a:hover {
     color: $link-hover;
 }
-
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a,
+.navbar-collapse ul.nav li.dropdown li a {
+    padding: 10px;
+    margin-left: 10px;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover,
+.navbar-collapse ul.nav li.dropdown li a:hover {
+    background-color: inherit;
+}
 /*Makes menu item drop on hover on desktop screens */
 @media (min-width: 768px) {
     ul.nav li.dropdown:hover > ul.dropdown-menu {
         display: block;
     }
+    .navbar-nav {
+    float: right;
+    margin-right: 4%;
+    }
 }
 @media (max-width: 767px) {
- 
+      .navbar-inverse .navbar-nav .open .dropdown-menu>li>a,
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover,
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:active,
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus {
+        font-size: $p-size;
+        color: $link;
+    }
+    .navbar-collapse ul.nav li a:hover {
+        color: $link;
+    }
 }
 /* Header ----------------------- */
-#jumbotron {
-    height: 400px;
-    width: 100%;
+header {
+    background-color: $primary;
+    margin-top: -10px;
+}
+header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px;
+    padding-bottom: 10px;
+    line-height: 1.4em;
+    color: $white;
+    font-size: $h1;
+}
+header h3 {
+    padding: 15px;
+    font-size: $h2;
+    text-align: center;
+    color: $white;
 }
 /* Sliders ----------------------- */
 
 /* Main ----------------------- */
 
 /* Form ----------------------- */
-
 /* Footer ----------------------- */
 footer {
     background-color: $second-bg;
-    padding: 50px;
-    padding-bottom: 0px;
+    padding: 40px;
+    color: $gray;
+}
+footer .col-sm-4 {
+    padding: 20px;
+}
+.navigation {
+    display: inline;
+    list-style-type: none;
 }
 footer a {
     color: $gray;
@@ -155,11 +207,19 @@ footer a:hover {
 .social {
     text-align: center;
 }
+.contact-info {
+    margin-bottom: 40px;
+}
+.contact-info p {
+    color: $gray;
+}
 .fa {
     padding: 10px;
 }
 #copyright {
     text-align: center;
     padding: 10px;
-    margin-top: 60px;
+    margin-top: -140px;
+    margin-bottom: 0px;
+    color: $gray;
 }

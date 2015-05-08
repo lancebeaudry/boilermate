@@ -10,7 +10,7 @@
     <meta property="og:image" content="link-image"/>
     <link rel="image_src" href="link-image"/>
     <link rel="icon" href="favicon">
-    <title>TRT Furniture Repair | Home</title>
+    <title>Title</title>
     <!-- CSS -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
     <link href="assets/css/slick.min.css" rel="stylesheet">
@@ -33,24 +33,29 @@
   </head>
 <body ng-app="MyApp">
     <div class="nav" ng-controller="MainController">
-        <app-header info="navlist">testes</app-header>
+        <app-header info="navlist"></app-header>
     </div><!--//ng-controller-->
 
 <!-- Header ========================================== -->
-<div id="jumbotron">
-    <h1 class="">Header</h1>
-</div>
+<header>
+    <h1>Big Title</h1>
+    <h3>Subtitle</h3>
+</header>
 
 <!-- Main =========================================== -->
  <section>
-     <p> This is an example text. This is really sweet.</p>
+     <div class="container">
+         <h2>H2 Section Title</h2>
+     </div>
  </section>
 
 
 <!-- Footer  ========================================== -->
-    <div class="main" ng-controller="MainController">
+<div class="main" ng-controller="MainController">
+    <footer>
         <app-footer info="footerList"></app-footer>
-    </div><!--//ng-controller-->
+    </footer>
+</div><!--//ng-controller-->
     
     
 <!-- Javascript -->
@@ -65,10 +70,11 @@
     <script src="assets/js/directives/footer.js"></script>
     <!-- Frameworks -->
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/frameworks/slick.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/content.js"></script>
-<!-- Animations -->
+
+    <!-- Animations -->
 <script>
 var wow = new WOW(
   {

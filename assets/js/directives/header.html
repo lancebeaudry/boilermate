@@ -8,20 +8,20 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">
-        <!-- your branding here -->
+        <h3>Logo</h3>
       </a>
     </div>
     <div class="collapse navbar-collapse" ng-init="isCollapsed = true" collapse="isCollapsed">
             <ul class="nav navbar-nav">
                 <li><a href="#">{{ info.item1 }}</a></li>
-                <li dropdown class="dropdown"><a href="#" dropdown-toggle class="dropdown-li">Dropdown<span class="caret"></span></a>
+                <li dropdown class="dropdown"><a href="#" dropdown-toggle class="dropdown-li">{{ info.item2 }}<span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">User</a></li>
-                        <li><a href="#">User</a></li>
-                        <li><a href="#">User</a></li>
+                        <li><a href="#">{{ info.item3 }}</a></li>
+                        <li><a href="#">{{ info.item4 }}</a></li>
                     </ul>
                 </li>
                 <li><a href="#">{{ info.item5 }}</a></li>
+                <li><a href="#">{{ info.item6 }}</a></li>
             </ul>   
     </div>
 </nav>
