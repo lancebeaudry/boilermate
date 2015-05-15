@@ -2,12 +2,13 @@
 
 // Colors
 
-$main-bg: #ffffff;
+$main-bg: #f0f0f0;
 $second-bg: #363B3E;
 $link: #212121;
 $link-hover: #2196F3;
 $primary: #2196F3;
-$secondary: #90CAF9;
+$primary-dark: #1565C0;
+$secondary: #00C853;
 $p-color: #4a4a4a;
 $h-color: #212121;
 $main-border: #ccc;
@@ -34,11 +35,12 @@ $p-size: 1em;
 /* Global Styles ----------------- */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import url(animate.min.css);
+
 body {
     margin: 0px;
     position: relative;
     background-color: $main-bg;
-    font-family: "PT Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
     color: $h-color;
@@ -75,6 +77,25 @@ a:focus {
     border: none;
     outline: none;
 }
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px $white inset !important;
+    -webkit-text-fill-color: $p-color !important;
+}         
+::-webkit-input-placeholder {
+   color: $gray;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $gray;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $gray;  
+}
+
+:-ms-input-placeholder {  
+   color: $gray;
+}
 @media (min-width: 768px) {
     .container {
         width: auto;
@@ -90,12 +111,22 @@ a:focus {
     }
 }
 /* Nav ------------------------- */
+#logo {
+    width: 200px;
+    margin-top: 8px;
+}
 .navbar-inverse {
     background-color: $white;
 }
 .navbar-collapse {
     margin-top: 4px;
     background-color: $white;
+}
+.box-shadow {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    -o-box-shadow: 0 2px 5px rgba(0,0,0,0.26);
 }
 .navbar-inverse .navbar-nav>.open>a,
 .navbar-inverse .navbar-nav>.open>a:hover,
@@ -162,7 +193,7 @@ a:focus {
 }
 /* Header ----------------------- */
 header {
-    background-color: $primary;
+    background-color: $secondary;
     margin-top: -10px;
 }
 header h1 {
@@ -183,10 +214,40 @@ header h3 {
 /* Sliders ----------------------- */
 
 /* Main ----------------------- */
-
+.info {
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.info .content {
+    background-color: $white;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    -o-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    transition: all .2s ease-in-out;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 20px 0px;
+}
+.content .fa {
+    color: $gray;
+}
+.content h3 {
+    font-size: $h2;
+}
+.info p {
+    width: 80%;
+    margin: auto;
+}
 /* Form ----------------------- */
+#success-form,
+#fail-form {
+    display: none;
+}
+
 /* Footer ----------------------- */
 footer {
+    margin-top: 20px;
     background-color: $second-bg;
     padding: 40px;
     color: $gray;
@@ -219,7 +280,6 @@ footer a:hover {
 #copyright {
     text-align: center;
     padding: 10px;
-    margin-top: -140px;
     margin-bottom: 0px;
     color: $gray;
 }

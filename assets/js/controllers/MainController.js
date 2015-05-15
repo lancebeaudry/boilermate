@@ -1,11 +1,12 @@
 app.controller('MainController', ['$scope', function ($scope, $log) {
     $scope.navlist = {
         item1: 'Home',
-        item2: 'Dropdown',
-        item3: 'Item',
-        item4: 'Item2',
+        item2: 'Services',
+        item3: 'Item 1',
+        item4: 'Item 2',
         item5: 'About',
-        item6: 'Contact'
+        item6: 'Contact',
+        logo: ''
     };
     $scope.status = {
         isopen: false

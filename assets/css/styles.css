@@ -2,148 +2,183 @@
 @import url(animate.min.css);
 /* Components & Variables */
 /* Global Styles ----------------- */
-/* line 37, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 39, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 body {
   margin: 0px;
   position: relative;
-  background-color: #ffffff;
-  font-family: "PT Sans", sans-serif; }
+  background-color: #f0f0f0;
+  font-family: "Open Sans", sans-serif; }
 
-/* line 43, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 45, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #212121; }
 
-/* line 46, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 48, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 h1 {
   font-size: 2em; }
 
-/* line 49, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 51, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 h2 {
   font-size: 1.5em; }
 
-/* line 52, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 54, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 h3 {
   font-size: 1.17em; }
 
-/* line 55, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 57, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 h4 {
   font-size: 1.12em; }
 
-/* line 58, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 60, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 h5 {
   font-size: 0.83em; }
 
-/* line 61, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 63, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 h6 {
   font-size: 0.75em; }
 
-/* line 64, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 66, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 p {
   font-size: 1em;
   color: #4a4a4a; }
 
-/* line 68, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 70, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 a button:hover {
   background-color: #2196F3; }
 
-/* line 74, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 76, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 a, a:hover, a:active, a:focus {
   border: none;
   outline: none; }
 
+/* line 80, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #f7f7f7 inset !important;
+  -webkit-text-fill-color: #4a4a4a !important; }
+
+/* line 84, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
+::-webkit-input-placeholder {
+  color: #959595; }
+
+/* line 88, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #959595; }
+
+/* line 92, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #959595; }
+
+/* line 96, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
+:-ms-input-placeholder {
+  color: #959595; }
+
 @media (min-width: 768px) {
-  /* line 79, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+  /* line 100, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
   .container {
     width: auto; } }
 
 @media (max-width: 767px) {
-  /* line 84, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+  /* line 105, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
   body {
     padding: 0px; }
-  /* line 87, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+  /* line 108, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
   .container {
     padding-left: 25px;
     padding-right: 25px; } }
 
 /* Nav ------------------------- */
-/* line 93, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 114, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
+#logo {
+  width: 200px;
+  margin-top: 8px; }
+
+/* line 118, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 .navbar-inverse {
   background-color: #f7f7f7; }
 
-/* line 96, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 121, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 .navbar-collapse {
   margin-top: 4px;
   background-color: #f7f7f7; }
 
-/* line 103, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 125, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
+.box-shadow {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  -o-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); }
+
+/* line 134, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:active, .navbar-inverse .navbar-nav > .open > a:focus {
   background-color: #f7f7f7;
   color: #212121; }
 
-/* line 107, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 138, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 .navbar-brand h3 {
   color: #2196F3; }
 
-/* line 110, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 141, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 .navbar-header .navbar-toggle {
   border: none; }
 
-/* line 115, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 146, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 .navbar-header .navbar-toggle:hover, .navbar-header .navbar-toggle:active, .navbar-header .navbar-toggle:focus {
   border: none;
   background-color: inherit; }
 
-/* line 119, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 150, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 .navbar-header .navbar-toggle > .icon-bar {
   background-color: #2196F3;
   width: 30px;
   height: 3px; }
 
-/* line 124, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 155, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 .navbar-collapse ul.nav li a {
   color: #212121;
   text-transform: uppercase;
   font-size: 1em; }
 
-/* line 129, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 160, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 .navbar-collapse ul.nav li a:hover {
   color: #2196F3; }
 
-/* line 133, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 164, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 .navbar-inverse .navbar-nav .open .dropdown-menu > li > a, .navbar-collapse ul.nav li.dropdown li a {
   padding: 10px;
   margin-left: 10px; }
 
-/* line 138, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 169, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-collapse ul.nav li.dropdown li a:hover {
   background-color: inherit; }
 
 /*Makes menu item drop on hover on desktop screens */
 @media (min-width: 768px) {
-  /* line 143, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+  /* line 174, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
   ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block; }
-  /* line 146, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+  /* line 177, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
   .navbar-nav {
     float: right;
     margin-right: 4%; } }
 
 @media (max-width: 767px) {
-  /* line 155, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+  /* line 186, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:active, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
     font-size: 1em;
     color: #212121; }
-  /* line 159, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+  /* line 190, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
   .navbar-collapse ul.nav li a:hover {
     color: #212121; } }
 
 /* Header ----------------------- */
-/* line 164, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 195, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 header {
-  background-color: #2196F3;
+  background-color: #00C853;
   margin-top: -10px; }
 
-/* line 168, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 199, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 header h1 {
   text-align: center;
   text-transform: uppercase;
@@ -153,7 +188,7 @@ header h1 {
   color: #f7f7f7;
   font-size: 2em; }
 
-/* line 177, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 208, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 header h3 {
   padding: 15px;
   font-size: 1.5em;
@@ -162,52 +197,86 @@ header h3 {
 
 /* Sliders ----------------------- */
 /* Main ----------------------- */
+/* line 217, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
+.info {
+  margin-bottom: 30px;
+  margin-top: 10px; }
+
+/* line 221, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
+.info .content {
+  background-color: #f7f7f7;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -o-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: all .2s ease-in-out;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 20px 0px; }
+
+/* line 232, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
+.content .fa {
+  color: #959595; }
+
+/* line 235, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
+.content h3 {
+  font-size: 1.5em; }
+
+/* line 238, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
+.info p {
+  width: 80%;
+  margin: auto; }
+
 /* Form ----------------------- */
+/* line 244, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
+#success-form, #fail-form {
+  display: none; }
+
 /* Footer ----------------------- */
-/* line 189, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 249, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 footer {
+  margin-top: 20px;
   background-color: #363B3E;
   padding: 40px;
   color: #959595; }
 
-/* line 194, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 255, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 footer .col-sm-4 {
   padding: 20px; }
 
-/* line 197, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 258, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 .navigation {
   display: inline;
   list-style-type: none; }
 
-/* line 201, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 262, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 footer a {
   color: #959595; }
 
-/* line 204, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 265, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 footer a:hover {
   color: #f7f7f7; }
 
-/* line 207, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 268, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 .social {
   text-align: center; }
 
-/* line 210, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 271, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 .contact-info {
   margin-bottom: 40px; }
 
-/* line 213, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 274, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 .contact-info p {
   color: #959595; }
 
-/* line 216, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 277, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 .fa {
   padding: 10px; }
 
-/* line 219, /Library/WebServer/Documents/ng/assets/css/styles.scss */
+/* line 280, /Library/WebServer/Documents/boilermate/assets/css/styles.scss */
 #copyright {
   text-align: center;
   padding: 10px;
-  margin-top: -140px;
   margin-bottom: 0px;
   color: #959595; }
 
